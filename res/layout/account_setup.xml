@@ -34,15 +34,6 @@
         android:orientation="vertical"
         android:padding="8dp" >
 
-        <ImageView
-            android:id="@+id/thumbnail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/logo"
-            android:contentDescription="@string/app_name"/>
-
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/centeredRefreshButton"
             style="@style/ownCloud.Button"
@@ -53,7 +44,16 @@
             android:text="@string/auth_check_server"
             android:visibility="gone"
             android:contentDescription="@string/auth_check_server"/>
-        
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/app_name" />
+
         <TextView
             android:id="@+id/instructions_message"
             android:layout_width="wrap_content"
@@ -101,7 +101,8 @@
 				android:background="@android:color/transparent"
                 android:contentDescription="@string/auth_refresh_button"
 			    />
-		</FrameLayout>
+
+        </FrameLayout>
 
 		<TextView
             android:id="@+id/server_status_text"
